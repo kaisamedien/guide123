@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quartalsauswahl</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .rad {
+            position: relative;
+            width: 300px;
+            height: 300px;
+        }
+        .rad button {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            border: none;
+            border-radius: 50%;
+            transform-origin: 150px 150px;
+        }
+        .q1 { transform: rotate(0deg) translate(150px) rotate(-0deg); }
+        .q2 { transform: rotate(90deg) translate(150px) rotate(-90deg); }
+        .q3 { transform: rotate(180deg) translate(150px) rotate(-180deg); }
+        .q4 { transform: rotate(270deg) translate(150px) rotate(-270deg); }
+    </style>
+</head>
+<body>
+    <div class="rad">
+        <button class="q1">Jan-März</button>
+        <button class="q2">Apr-Jun</button>
+        <button class="q3">Jul-Sep</button>
+        <button class="q4">Okt-Dez</button>
+    </div>
+</body>
+</html>
